@@ -4,5 +4,8 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 # copy zshrc
 cp .zshrc ~/.zshrc
 
+# copy vimrc
+cp .vimrc ~/.vimrc
+
 # change shell to zsh
-chsh -s /bin/zsh
+chsh -s $(which zsh)
